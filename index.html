@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tarea Entrevista</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Fases Resueltas del Desarrollo de Software</h1>
+        <div class="section">
+            <h2>Explicación proyecto</h2>
+            <p><strong>En este proyecto realizaremos una plataforma de gestión de tareas en equipo.</strong></p>
+        </div>
+        <div class="section">
+            <h2>Planificación y Análisis de Requisitos</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Requisito</th>
+                        <th>Plazo de entrega</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Registro e inicio de sesión</td>
+                        <td>3 semanas</td>
+                    </tr>
+                    <tr>
+                        <td>Creacion y gestion de tares</td>
+                        <td>2 semanas</td>
+                    </tr>
+                    <tr>
+                        <td>Asignación de tareas de usuarios</td>
+                        <td>2 semanas</td>
+                    </tr>
+                    <tr>
+                        <td>Comentarios y colaboreciones en tareas</td>
+                        <td>2 semanas</td>
+                    </tr>
+                    <tr>
+                        <td>Notificaciones y recordatorios</td>
+                        <td>3 semanas</td>
+                    </tr>
+                    <tr>
+                        <td>Reportes de productividad y seguimiento</td>
+                        <td>2 semanas</td>
+                    </tr>
+                    <tr>
+                        <td>Integración con calendarios (Google, Outlook)</td>
+                        <td>4 semanas</td>
+                    </tr>
+                    <tr>
+                        <td>Rendimiento y escalabilidad</td>
+                        <td>En paralelo con la implementación</td>
+                    </tr>
+                    <tr>
+                        <td>Seguridad (cifrado, protección de datos)</td>
+                        <td>En paralelo </td>
+                    </tr>
+                    <tr>
+                        <td>Compatibilidad (diseño responsivo)</td>
+                        <td>Durante todo el desarrollo</td>
+                    </tr>
+                    <tr>
+                        <td>Mantenimiento (Documentación y soporte)</td>
+                        <td>Una vez finalizado el proyecto</td>
+                    </tr>
+                    <tr>
+                        <td>Pruebas de rendimiento, seguridad y escalabilidad</td>
+                        <td>2 semanas</td>
+                    </tr>
+                    <tr>
+                        <td>Pruebas de compatibilidad</td>
+                        <td>1 semana</td>
+                    </tr>
+                    <tr>
+                        <td>Despliegue y puesta en producción</td>
+                        <td>1 semana</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>La duración de este proyecto será de <strong>5 meses de desarrollo</strong>, en los cuales dedicaremos el tiempo estipulado anteriormente a cada parte de dicho proyecto.</p>
+        </div>
+    
+        <div class="section">
+            <h2>Definición de Requisitos</h2>
+    
+            <h3>Requisitos Funcionales</h3>
+            <ul>
+                <li><strong>Registro o Inicio de Sesión:</strong>  Los usuarios podrán registrarse y gestionar su cuenta.</li>
+                <ul>
+                    <li><strong>Subfunción:</strong> Permitir recuperación de contraseñas y autenticación de dos factores.</li>
+                </ul>
+                <li><strong>Creacion y gestión de tareas:</strong> Los usuarios podrán crear, editar y eliminar tareas.</li>
+                <ul>
+                    <li><strong>Subfunción:</strong> Asignar fechas de vencimiento y etiquetas a las tareas.</li>
+                </ul>
+                <li><strong>Asignación de tareas a usuarios:</strong> Permitir que los usuarios asignen tareas a otros miembros del equipo.</li>
+                
+                <li><strong>Comentarios y colaboraciones en tareas: </strong> Los usuarios podrán dejar comentarios en las tareas para fomentar la colaboración.</li>
+                <li><strong>Notificaciones y recordatorios:</strong> Enviar notificaciones sobre próximas fechas de vencimiento y cambios en las tareas.
+                </li>
+                
+                <li><strong>Reportes de productividad:</strong> Los usuarios recibirán notificaciones por correo electrónico sobre el estado de su pedido.</li>
+                
+            </ul>
+    
+            <h3>Requisitos No Funcionales</h3>
+            <ul>
+                <li><strong>Usabilidad:</strong> La interfaz debe ser intuitiva y fácil de navegar, facilitando la gestión de tareas.</li>
+                <li><strong>Rendimiento:</strong> La aplicación debe ser capaz de manejar múltiples usuarios simultáneamente, manteniendo tiempos de respuesta óptimos.</li>
+                <li><strong>Seguridad:</strong> Asegurar que los datos de los usuarios y las tareas estén protegidos.</li>
+                <li><strong>Disponibilidad:</strong>  La plataforma debe estar disponible 24/7, con mínimo tiempo de inactividad.</li>
+                <li><strong>Escalabilidad:</strong> Capacidad para manejar un crecimiento en la base de usuarios y tareas sin degradar el rendimiento.</li>
+                <li><strong>Compatibilidad:</strong> La aplicación debe funcionar en diferentes dispositivos y navegadores.</li>
+                <li><strong>Mantenibilidad:</strong> El código debe estar bien documentado para facilitar futuras actualizaciones.</li>
+            </ul>
+        </div>
+    
+        <div class="section">
+            <h2>Diseño de la Arquitectura</h2>
+            <p><strong>Frontend:</strong> Desarrollado en <strong>React</strong> para una interfaz para una interfaz responsiva y amigable.</p>
+            <p><strong>Backend:</strong> con <strong>Node.js</strong> con una API REST para manejar la gestión de usuarios y tareas.</p>
+            <p><strong>Base de datos:</strong> <strong>MongoDB</strong> para almacenar información de usuarios y tareas.</p>
+            <p><strong>Integración con calendarios:</strong> APIs para conectar con Google Calendar y Outlook.</p>
+    
+            <div class="codigo">
+                <p>Backend</p>
+                <ul>
+                    <li>Interfaz de Usuario</li>
+                    <li>Gestion de tareas</li>
+                    <li>Manejo de Usuarios</li>
+                    <li>Notificaciones</li>
+                    <li>Reportes</li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="section">
+            <h2>Implementación</h2>
+            <ul>
+                <li>Configurar la API REST para la gestión de usuarios y tareas.</li>
+                <li>Crear una interfaz atractiva con React, incluyendo vistas para tareas pendientes y completadas.</li>
+                <li>Integrar la funcionalidad de notificaciones y recordatorios.</li>
+            </ul>
+        </div>
+    
+        <div class="section">
+            <h2>Pruebas</h2>
+            <ul>
+                <li>Realizar pruebas de carga para evaluar la respuesta de la plataforma bajo múltiples usuarios concurrentes.</li>
+                <li>Testear la funcionalidad de gestión de tareas y comentarios en diferentes dispositivos y navegadores.
+                </li>
+            </ul>
+        </div>
+    
+        <div class="section">
+            <h2>Despliegue y Mantenimiento</h2>
+            <ul>
+                <li>Desplegar la aplicación en AWS para garantizar escalabilidad, con opciones de respaldo y recuperación.</li>
+                <li>Monitorear el rendimiento de la aplicación utilizando CloudWatch, y establecer ciclos de mantenimiento y actualización periódicos.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
